@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F00BAA5119BA193C007BBE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA5019BA193C007BBE3C /* Foundation.framework */; };
+		F00BAA5319BA193C007BBE3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA5219BA193C007BBE3C /* CoreGraphics.framework */; };
+		F00BAA5519BA193C007BBE3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA5419BA193C007BBE3C /* UIKit.framework */; };
+		F00BAA5B19BA193C007BBE3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F00BAA5919BA193C007BBE3C /* InfoPlist.strings */; };
+		F00BAA5D19BA193C007BBE3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F00BAA5C19BA193C007BBE3C /* main.m */; };
+		F00BAA6119BA193C007BBE3C /* GAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F00BAA6019BA193C007BBE3C /* GAAppDelegate.m */; };
+		F00BAA6319BA193C007BBE3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00BAA6219BA193C007BBE3C /* Images.xcassets */; };
+		F00BAA6A19BA193C007BBE3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA6919BA193C007BBE3C /* XCTest.framework */; };
+		F00BAA6B19BA193C007BBE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA5019BA193C007BBE3C /* Foundation.framework */; };
+		F00BAA6C19BA193C007BBE3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00BAA5419BA193C007BBE3C /* UIKit.framework */; };
+		F00BAA7419BA193C007BBE3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F00BAA7219BA193C007BBE3C /* InfoPlist.strings */; };
+		F00BAA7619BA193C007BBE3C /* CFTreeLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F00BAA7519BA193C007BBE3C /* CFTreeLeakTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F00BAA6D19BA193C007BBE3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F00BAA4519BA193C007BBE3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F00BAA4C19BA193C007BBE3C;
+			remoteInfo = CFTreeLeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F00BAA4D19BA193C007BBE3C /* CFTreeLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFTreeLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00BAA5019BA193C007BBE3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F00BAA5219BA193C007BBE3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F00BAA5419BA193C007BBE3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F00BAA5819BA193C007BBE3C /* CFTreeLeak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CFTreeLeak-Info.plist"; sourceTree = "<group>"; };
+		F00BAA5A19BA193C007BBE3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00BAA5C19BA193C007BBE3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F00BAA5E19BA193C007BBE3C /* CFTreeLeak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFTreeLeak-Prefix.pch"; sourceTree = "<group>"; };
+		F00BAA5F19BA193C007BBE3C /* GAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAAppDelegate.h; sourceTree = "<group>"; };
+		F00BAA6019BA193C007BBE3C /* GAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAAppDelegate.m; sourceTree = "<group>"; };
+		F00BAA6219BA193C007BBE3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F00BAA6819BA193C007BBE3C /* CFTreeLeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFTreeLeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00BAA6919BA193C007BBE3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F00BAA7119BA193C007BBE3C /* CFTreeLeakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CFTreeLeakTests-Info.plist"; sourceTree = "<group>"; };
+		F00BAA7319BA193C007BBE3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F00BAA7519BA193C007BBE3C /* CFTreeLeakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFTreeLeakTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F00BAA4A19BA193C007BBE3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA5319BA193C007BBE3C /* CoreGraphics.framework in Frameworks */,
+				F00BAA5519BA193C007BBE3C /* UIKit.framework in Frameworks */,
+				F00BAA5119BA193C007BBE3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00BAA6519BA193C007BBE3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA6A19BA193C007BBE3C /* XCTest.framework in Frameworks */,
+				F00BAA6C19BA193C007BBE3C /* UIKit.framework in Frameworks */,
+				F00BAA6B19BA193C007BBE3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F00BAA4419BA193C007BBE3C = {
+			isa = PBXGroup;
+			children = (
+				F00BAA5619BA193C007BBE3C /* CFTreeLeak */,
+				F00BAA6F19BA193C007BBE3C /* CFTreeLeakTests */,
+				F00BAA4F19BA193C007BBE3C /* Frameworks */,
+				F00BAA4E19BA193C007BBE3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F00BAA4E19BA193C007BBE3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA4D19BA193C007BBE3C /* CFTreeLeak.app */,
+				F00BAA6819BA193C007BBE3C /* CFTreeLeakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F00BAA4F19BA193C007BBE3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA5019BA193C007BBE3C /* Foundation.framework */,
+				F00BAA5219BA193C007BBE3C /* CoreGraphics.framework */,
+				F00BAA5419BA193C007BBE3C /* UIKit.framework */,
+				F00BAA6919BA193C007BBE3C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00BAA5619BA193C007BBE3C /* CFTreeLeak */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA5F19BA193C007BBE3C /* GAAppDelegate.h */,
+				F00BAA6019BA193C007BBE3C /* GAAppDelegate.m */,
+				F00BAA6219BA193C007BBE3C /* Images.xcassets */,
+				F00BAA5719BA193C007BBE3C /* Supporting Files */,
+			);
+			path = CFTreeLeak;
+			sourceTree = "<group>";
+		};
+		F00BAA5719BA193C007BBE3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA5819BA193C007BBE3C /* CFTreeLeak-Info.plist */,
+				F00BAA5919BA193C007BBE3C /* InfoPlist.strings */,
+				F00BAA5C19BA193C007BBE3C /* main.m */,
+				F00BAA5E19BA193C007BBE3C /* CFTreeLeak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F00BAA6F19BA193C007BBE3C /* CFTreeLeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA7519BA193C007BBE3C /* CFTreeLeakTests.m */,
+				F00BAA7019BA193C007BBE3C /* Supporting Files */,
+			);
+			path = CFTreeLeakTests;
+			sourceTree = "<group>";
+		};
+		F00BAA7019BA193C007BBE3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00BAA7119BA193C007BBE3C /* CFTreeLeakTests-Info.plist */,
+				F00BAA7219BA193C007BBE3C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F00BAA4C19BA193C007BBE3C /* CFTreeLeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00BAA7919BA193C007BBE3C /* Build configuration list for PBXNativeTarget "CFTreeLeak" */;
+			buildPhases = (
+				F00BAA4919BA193C007BBE3C /* Sources */,
+				F00BAA4A19BA193C007BBE3C /* Frameworks */,
+				F00BAA4B19BA193C007BBE3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CFTreeLeak;
+			productName = CFTreeLeak;
+			productReference = F00BAA4D19BA193C007BBE3C /* CFTreeLeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F00BAA6719BA193C007BBE3C /* CFTreeLeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00BAA7C19BA193C007BBE3C /* Build configuration list for PBXNativeTarget "CFTreeLeakTests" */;
+			buildPhases = (
+				F00BAA6419BA193C007BBE3C /* Sources */,
+				F00BAA6519BA193C007BBE3C /* Frameworks */,
+				F00BAA6619BA193C007BBE3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00BAA6E19BA193C007BBE3C /* PBXTargetDependency */,
+			);
+			name = CFTreeLeakTests;
+			productName = CFTreeLeakTests;
+			productReference = F00BAA6819BA193C007BBE3C /* CFTreeLeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F00BAA4519BA193C007BBE3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Guillaume Algis";
+				TargetAttributes = {
+					F00BAA6719BA193C007BBE3C = {
+						TestTargetID = F00BAA4C19BA193C007BBE3C;
+					};
+				};
+			};
+			buildConfigurationList = F00BAA4819BA193C007BBE3C /* Build configuration list for PBXProject "CFTreeLeak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F00BAA4419BA193C007BBE3C;
+			productRefGroup = F00BAA4E19BA193C007BBE3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F00BAA4C19BA193C007BBE3C /* CFTreeLeak */,
+				F00BAA6719BA193C007BBE3C /* CFTreeLeakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F00BAA4B19BA193C007BBE3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA5B19BA193C007BBE3C /* InfoPlist.strings in Resources */,
+				F00BAA6319BA193C007BBE3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00BAA6619BA193C007BBE3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA7419BA193C007BBE3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F00BAA4919BA193C007BBE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA6119BA193C007BBE3C /* GAAppDelegate.m in Sources */,
+				F00BAA5D19BA193C007BBE3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00BAA6419BA193C007BBE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00BAA7619BA193C007BBE3C /* CFTreeLeakTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F00BAA6E19BA193C007BBE3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F00BAA4C19BA193C007BBE3C /* CFTreeLeak */;
+			targetProxy = F00BAA6D19BA193C007BBE3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F00BAA5919BA193C007BBE3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F00BAA5A19BA193C007BBE3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F00BAA7219BA193C007BBE3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F00BAA7319BA193C007BBE3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F00BAA7719BA193C007BBE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F00BAA7819BA193C007BBE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F00BAA7A19BA193C007BBE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFTreeLeak/CFTreeLeak-Prefix.pch";
+				INFOPLIST_FILE = "CFTreeLeak/CFTreeLeak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F00BAA7B19BA193C007BBE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFTreeLeak/CFTreeLeak-Prefix.pch";
+				INFOPLIST_FILE = "CFTreeLeak/CFTreeLeak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F00BAA7D19BA193C007BBE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CFTreeLeak.app/CFTreeLeak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFTreeLeak/CFTreeLeak-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CFTreeLeakTests/CFTreeLeakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F00BAA7E19BA193C007BBE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CFTreeLeak.app/CFTreeLeak";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFTreeLeak/CFTreeLeak-Prefix.pch";
+				INFOPLIST_FILE = "CFTreeLeakTests/CFTreeLeakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00BAA4819BA193C007BBE3C /* Build configuration list for PBXProject "CFTreeLeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00BAA7719BA193C007BBE3C /* Debug */,
+				F00BAA7819BA193C007BBE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00BAA7919BA193C007BBE3C /* Build configuration list for PBXNativeTarget "CFTreeLeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00BAA7A19BA193C007BBE3C /* Debug */,
+				F00BAA7B19BA193C007BBE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F00BAA7C19BA193C007BBE3C /* Build configuration list for PBXNativeTarget "CFTreeLeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00BAA7D19BA193C007BBE3C /* Debug */,
+				F00BAA7E19BA193C007BBE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F00BAA4519BA193C007BBE3C /* Project object */;
+}
